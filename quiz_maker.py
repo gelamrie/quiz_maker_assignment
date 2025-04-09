@@ -17,7 +17,7 @@ def typing_effect_centered(text, width=60, delay=0.04, color=Fore.RED + Style.BR
 def welcome_screen():
     border_design = (" ★ " + " ♡ ") * 10 #Add border design to enhance the appearance 
     print(Fore.LIGHTWHITE_EX + Style.BRIGHT + border_design)
-    #Display a welcome message with the typing effect
+    typing_effect_centered(" Welcome to the Quiz Creator! ", width=len(border_design)) #Display a welcome message with the typing effect
 #Create a function that will ask the user for the category, questions, choices and correct answer
     #After asking for the choices, store it in a disctionary
     #After entering the correct answer, validate if it is one of the choices
