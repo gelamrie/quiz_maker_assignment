@@ -11,7 +11,10 @@ def typing_effect_centered(text, width=60, delay=0.04, color=Fore.RED + Style.BR
         sys.stdout.write(color + char)
         sys.stdout.flush()
         time.sleep(delay)
+    print()
+
 #Create a function for the welcome screen 
+def welcome_screen():
     #Add border design to enhance the appearance 
     #Display a welcome message with the typing effect
 #Create a function that will ask the user for the category, questions, choices and correct answer
