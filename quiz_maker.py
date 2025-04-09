@@ -65,7 +65,8 @@ def main():
         
             #Ask the user if they still want to input another question
             add_more_questions = input(Fore.CYAN + "Add another question? (y/n): ").strip().lower()
-             
+            if add_more_questions != 'y': 
+                break 
     #After exiting the loop, print a success message that will indicate that all questions were saved to the file 
     #Print the preview of all questions from the session
 #Run the program 
