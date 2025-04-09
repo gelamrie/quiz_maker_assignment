@@ -31,7 +31,10 @@ def get_question_block():
     choices_dictionary = {}
     for letter in ['a', 'b', 'c', 'd']:
         choices_dictionary[letter] = input(Fore.BLUE + f"Choice ({letter}): ")
+
     #After entering the correct answer, validate if it is one of the choices
+    while True: 
+        correct_answer = input(Fore.GREEN + "Which one is the correct answer? (a/b/c/d): ")
     #If valid, return
 #Create a function for the main program and create the logic
     #Call the welcome screen
