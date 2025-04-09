@@ -29,6 +29,8 @@ def get_question_block():
 
     #After asking for the choices, store it in a disctionary
     choices_dictionary = {}
+    for letter in ['a', 'b', 'c', 'd']:
+        choices_dictionary[letter] = input(Fore.BLUE + f"Choice ({letter}): ")
     #After entering the correct answer, validate if it is one of the choices
     #If valid, return
 #Create a function for the main program and create the logic
