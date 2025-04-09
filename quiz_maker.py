@@ -37,6 +37,7 @@ def get_question_block():
         correct_answer = input(Fore.GREEN + "Which one is the correct answer? (a/b/c/d): ")
         if correct_answer in choices_dictionary:
             break 
+        print(Fore.RED + "❌ Invalid input. Please choose from a, b, c, or d.")
     #If valid, return
 
 #Create a function for the main program and create the logic
