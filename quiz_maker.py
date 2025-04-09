@@ -19,7 +19,10 @@ def welcome_screen():
     print(Fore.LIGHTWHITE_EX + Style.BRIGHT + border_design)
     typing_effect_centered(" Welcome to the Quiz Creator! ", width=len(border_design)) #Display a welcome message with the typing effect
     print(Fore.LIGHTWHITE_EX + Style.BRIGHT + border_design + "\n")
+
 #Create a function that will ask the user for the category, questions, choices and correct answer
+def get_question_block(): 
+    print(Fore.CYAN + "\n=== New Question ===")
     #After asking for the choices, store it in a disctionary
     #After entering the correct answer, validate if it is one of the choices
     #If valid, return
