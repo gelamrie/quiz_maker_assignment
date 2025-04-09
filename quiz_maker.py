@@ -38,7 +38,12 @@ def get_question_block():
         if correct_answer in choices_dictionary:
             break 
         print(Fore.RED + "❌ Invalid input. Please choose from a, b, c, or d.")
+    
     #If valid, return
+    return (f"Category: {category}\n"
+        f"Question: {question_text}\n"
+        + ''.join(f"{option}) {choices_dictionary[option]}\n" for option in ['a', 'b', 'c', 'd'])
+        + f"Answer: {correct_answer}\n\n")
 
 #Create a function for the main program and create the logic
     #Call the welcome screen
