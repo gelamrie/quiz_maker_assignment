@@ -41,7 +41,7 @@ def get_question_block():
     
     #If valid, return
     return (f"Category: {category}\n"
-        f"Question: {question_text}\n"
+        f"Question: {question}\n"
         + ''.join(f"{option}) {choices_dictionary[option]}\n" for option in ['a', 'b', 'c', 'd'])
         + f"Answer: {correct_answer}\n\n")
 
@@ -61,7 +61,7 @@ def main():
         while True: #Start a loop to repeatedly ask user to add questions
             question_block = get_question_block()
             quiz_file.write(question_block) #Write the question to the file
-        #Add the question to the list for the preview later
+            #Add the question to the list for the preview later
         #Ask the user if they still want to input another question
     #After exiting the loop, print a success message that will indicate that all questions were saved to the file 
     #Print the preview of all questions from the session
