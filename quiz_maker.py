@@ -1,8 +1,11 @@
-#Intialize the libraries that will be needed 
+#Initialize the libraries that will be needed 
 from colorama import init, Fore, Style
 import time, sys 
 
+init(autoreset=True)
+
 #Create a typing effect for the welcome screen 
+def typing_effect_centered(text, width=60, delay=0.04, color=Fore.RED + Style.BRIGHT):
 #Create a function for the welcome screen 
     #Add border design to enhance the appearance 
     #Display a welcome message with the typing effect
