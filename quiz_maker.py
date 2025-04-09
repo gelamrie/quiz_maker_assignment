@@ -56,7 +56,8 @@ def main():
     #Create an empty list to store all questions for the session
     all_questions_this_session = []
     
-    #Open the text file
+    #Open the text 
+    with open(file_name, "a", encoding="utf-8") as quiz_file
         #Start a loop to repeatedly ask user to add questions
         #Write the question to the file
         #Add the question to the list for the preview later
