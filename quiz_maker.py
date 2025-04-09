@@ -26,7 +26,9 @@ def get_question_block():
 
     category = input(Fore.LIGHTMAGENTA_EX + "Enter a category (e.g., Math, History, Science): ")
     question = input(Fore.YELLOW + "Enter the question: ")
+
     #After asking for the choices, store it in a disctionary
+    choices_dictionary = {}
     #After entering the correct answer, validate if it is one of the choices
     #If valid, return
 #Create a function for the main program and create the logic
