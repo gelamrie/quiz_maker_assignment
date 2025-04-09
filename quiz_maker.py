@@ -1,4 +1,7 @@
 #Intialize the libraries that will be needed 
+from colorama import init, Fore, Style
+import time, sys 
+
 #Create a typing effect for the welcome screen 
 #Create a function for the welcome screen 
     #Add border design to enhance the appearance 
