@@ -68,6 +68,8 @@ def main():
             if add_more_questions != 'y': 
                 break 
     #After exiting the loop, print a success message that will indicate that all questions were saved to the file 
+    print(Fore.GREEN + f"\n✅ All questions saved to '{file_name}'")
+    
     #Print the preview of all questions from the session
 #Run the program 
 
