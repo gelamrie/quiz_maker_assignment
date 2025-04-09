@@ -60,7 +60,7 @@ def main():
     with open(file_name, "a", encoding="utf-8") as quiz_file #Ensure proper handling of all characters
         while True: #Start a loop to repeatedly ask user to add questions
             question_block = get_question_block()
-        #Write the question to the file
+            quiz_file.write(question_block) #Write the question to the file
         #Add the question to the list for the preview later
         #Ask the user if they still want to input another question
     #After exiting the loop, print a success message that will indicate that all questions were saved to the file 
