@@ -48,7 +48,8 @@ def get_question_block():
 #Create a function for the main program and create the logic
 def main():
     welcome_screen() #Call the welcome screen
-    #Ask the user for the file name for saving the quiz
+   
+    file_name = input(Fore.LIGHTCYAN_EX + "Enter the file name to save your quiz (e.g., myquiz.txt): ").strip() #Ask the user for the file name for saving the quiz
     #Create an empty list to store all questions for the session
     #Open the text file
         #Start a loop to repeatedly ask user to add questions
