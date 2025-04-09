@@ -9,7 +9,7 @@ def typing_effect_centered(text, width=60, delay=0.04, color=Fore.RED + Style.BR
     centered_text = text.center(width)
     for char in centered_text:
         sys.stdout.write(color + char)
-        
+        sys.stdout.flush()
 #Create a function for the welcome screen 
     #Add border design to enhance the appearance 
     #Display a welcome message with the typing effect
