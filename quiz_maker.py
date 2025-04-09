@@ -64,7 +64,7 @@ def main():
             all_questions_this_session.append(question_block) #Add the question to the list for the preview later
         
             #Ask the user if they still want to input another question
-            
+            add_more = input(Fore.CYAN + "Add another question? (y/n): ").strip().lower()
 
     #After exiting the loop, print a success message that will indicate that all questions were saved to the file 
     #Print the preview of all questions from the session
