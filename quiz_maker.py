@@ -77,6 +77,8 @@ def main():
         print(Fore.LIGHTBLACK_EX + "-" * 50)
 
 #Run the program 
+if __name__ == "__main__":
+   
 
 
 
