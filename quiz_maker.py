@@ -35,7 +35,10 @@ def get_question_block():
     #After entering the correct answer, validate if it is one of the choices
     while True: 
         correct_answer = input(Fore.GREEN + "Which one is the correct answer? (a/b/c/d): ")
+        if correct_answer in choices_dictionary:
+            break 
     #If valid, return
+
 #Create a function for the main program and create the logic
     #Call the welcome screen
     #Ask the user for the file name for saving the quiz
