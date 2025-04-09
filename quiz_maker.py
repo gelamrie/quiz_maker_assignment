@@ -69,8 +69,13 @@ def main():
                 break 
     #After exiting the loop, print a success message that will indicate that all questions were saved to the file 
     print(Fore.GREEN + f"\n✅ All questions saved to '{file_name}'")
-    
+
     #Print the preview of all questions from the session
+    print(Fore.YELLOW + "\n📋 Here's a preview of your questions from this session:\n")
+    for question in all_questions_this_session:
+        print(Fore.WHITE + question)
+        print(Fore.LIGHTBLACK_EX + "-" * 50)
+
 #Run the program 
 
 
