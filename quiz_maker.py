@@ -23,6 +23,8 @@ def welcome_screen():
 #Create a function that will ask the user for the category, questions, choices and correct answer
 def get_question_block(): 
     print(Fore.CYAN + "\n=== New Question ===")
+
+    category = input(Fore.LIGHTMAGENTA_EX + "Enter a category (e.g., Math, History, Science): ")
     #After asking for the choices, store it in a disctionary
     #After entering the correct answer, validate if it is one of the choices
     #If valid, return
