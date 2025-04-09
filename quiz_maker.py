@@ -50,6 +50,8 @@ def main():
     welcome_screen() #Call the welcome screen
    
     file_name = input(Fore.LIGHTCYAN_EX + "Enter the file name to save your quiz (e.g., myquiz.txt): ").strip() #Ask the user for the file name for saving the quiz
+    if not file_name.endswith(".txt"):
+        file_name += ".txt"
     #Create an empty list to store all questions for the session
     #Open the text file
         #Start a loop to repeatedly ask user to add questions
