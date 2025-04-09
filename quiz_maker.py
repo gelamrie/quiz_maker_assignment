@@ -46,7 +46,8 @@ def get_question_block():
         + f"Answer: {correct_answer}\n\n")
 
 #Create a function for the main program and create the logic
-    #Call the welcome screen
+def main():
+    welcome_screen() #Call the welcome screen
     #Ask the user for the file name for saving the quiz
     #Create an empty list to store all questions for the session
     #Open the text file
