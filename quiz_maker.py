@@ -27,7 +27,7 @@ def get_question_block():
     category = input(Fore.LIGHTMAGENTA_EX + "Enter a category (e.g., Math, History, Science): ")
     question = input(Fore.YELLOW + "Enter the question: ")
 
-    #After asking for the choices, store it in a disctionary
+    #After asking for the choices, store it in a dictionary
     choices_dictionary = {}
     for letter in ['a', 'b', 'c', 'd']:
         choices_dictionary[letter] = input(Fore.BLUE + f"Choice ({letter}): ")
@@ -67,6 +67,7 @@ def main():
             add_more_questions = input(Fore.CYAN + "Add another question? (y/n): ").strip().lower()
             if add_more_questions != 'y': 
                 break 
+            
     #After exiting the loop, print a success message that will indicate that all questions were saved to the file 
     print(Fore.GREEN + f"\n✅ All questions saved to '{file_name}'")
 
@@ -79,6 +80,3 @@ def main():
 #Run the program 
 if __name__ == "__main__":
    main()
-
-
-
