@@ -82,8 +82,11 @@ def display_question(question_data, question_number):
         choices_table.add_row(choice_letters[index], choice_text)
 
     console.print(choices_table)
-        
+
 #Create a function that will ask user to input their answer to the question
+def prompt_user_for_answer():
+    valid_letters = ['A', 'B', 'C', 'D', 'Q'] 
+    
 #Create a function that will start the quiz
     #Initialize score as zero
     #Shuffle the list of all loaded questions
