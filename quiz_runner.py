@@ -88,6 +88,8 @@ def prompt_user_for_answer():
     valid_letters = ['A', 'B', 'C', 'D', 'Q'] 
     while True:
         user_input = Prompt.ask("[bold yellow]Your answer (A-D or Q to quit)[/bold yellow]").strip().upper()
+        if user_input in valid_letters:
+            return user_input
 #Create a function that will start the quiz
     #Initialize score as zero
     #Shuffle the list of all loaded questions
