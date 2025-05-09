@@ -139,4 +139,6 @@ def main(): #Define function: main()
     except Exception as error:
         console.print(f"[bold red]❌ Error: {error}[/bold red]")
    
-#Call main() to begin execution
+
+if __name__ == "__main__":
+    main() #Call main() to begin execution
