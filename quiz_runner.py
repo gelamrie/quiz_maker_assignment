@@ -37,11 +37,11 @@ def load_questions_from_text(file_path):
 
     
     while line_index + 7 < len(raw_lines): #Loop thru the lines in the file
-         if raw_lines[line_index] == "":
+        if raw_lines[line_index] == "":
             line_index += 1
             continue
          
-          try:
+        try:
             category_line = raw_lines[line_index]
             question_line = raw_lines[line_index + 1]
             choice_lines = raw_lines[line_index + 2:line_index + 6]
