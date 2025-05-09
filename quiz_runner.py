@@ -55,12 +55,16 @@ def load_questions_from_text(file_path):
             correct_index = ord(correct_letter) - ord('A')
             correct_choice = choices[correct_index]
 
-        question_list.append({ #Add the question to the question list
+            question_list.append({ #Add the question to the question list
                 "category": category,
                 "question": question_text,
                 "choices": choices,
                 "answer": correct_choice
             }) 
+        
+        except Exception as error:
+            console.print(f"[bold red]⚠ Malformed block at line {line_index + 1}: {error}[/bold red]")
+            
 #Create a function that will display the questions, as well as the choices
 #Create a function that will ask user to input their answer to the question
 #Create a function that will start the quiz
