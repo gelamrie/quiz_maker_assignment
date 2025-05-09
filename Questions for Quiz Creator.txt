@@ -1,0 +1,80 @@
+Category: Filipino Celebrity 
+Question: Who is known as the "Popstar Royalty" in the Philippines?
+a) Regine Velasquez
+b) Moira Dela Torre
+c) Sarah Geronimo
+d) KZ Tandingan 
+Answer: c
+
+Category: Trending Issues
+Question: What is the name of the ruling that invalidated China's claims in the West Philippine Sea?
+a) UNCLOS
+b) The Hague Ruling
+c) ASEAN Accord
+d) Manila Declaration
+Answer: b
+
+Category: English 
+Question: What is the plural form of "child"?
+a) childs
+b) children
+c) childrens
+d) chuldes
+Answer: b
+
+Category: History
+Question: Who was the first president of the Philippines?
+a) Manuel L. Quezon
+b) Jose Rizal
+c) Emilio Aguinaldo
+d) Andres Bonifacio
+Answer: c
+
+Category: Science
+Question: Which planet is known as the "Red Planet"?
+a) Venus
+b) Mars
+c) Jupiter
+d) Neptune
+Answer: b
+
+Category: Math
+Question: What is the value of pi rounded to 2 decimal places?
+a) 3.14
+b) 3.41
+c) 5.67
+d) 3.24
+Answer: a
+
+Category: Filipino
+Question: What is the filipino translation of "Freedom"?
+a) Kaligayahan
+b) Kalayaan
+c) Karapatan
+d) Karanasan
+Answer: b
+
+Category: Technology
+Question: What does "HTML" stands for?
+a) High Text Machine Language
+b) Hyperlink and Text Markup Language
+c) Hyper Text Markup Language
+d) Home Tool Markup Language
+Answer: c
+
+Category: Music
+Question: Who sang the hit song "Easy on Me"?
+a) Tayloy Swift
+b) Adele
+c) Olivia Rodrigo 
+d) Ariana Grande
+Answer: b
+
+Category: Geography
+Question: What is the capital of Australia?
+a) Sydney
+b) Melbourne
+c) Brisbane
+d) Canberra
+Answer: d
+
