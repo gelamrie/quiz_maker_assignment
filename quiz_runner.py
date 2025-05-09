@@ -90,6 +90,7 @@ def prompt_user_for_answer():
         user_input = Prompt.ask("[bold yellow]Your answer (A-D or Q to quit)[/bold yellow]").strip().upper()
         if user_input in valid_letters:
             return user_input
+        console.print("[bold red]❗ Invalid input. Choose A, B, C, D, or Q to quit.[/bold red]")
 #Create a function that will start the quiz
     #Initialize score as zero
     #Shuffle the list of all loaded questions
