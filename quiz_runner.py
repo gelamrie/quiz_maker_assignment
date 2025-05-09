@@ -97,6 +97,10 @@ def start_quiz(questions):
     score = 0  #Initialize score as zero
     random.shuffle(questions) #Shuffle the list of all loaded questions
 
+    for question_number, question_data in enumerate(questions):
+        display_question(question_data, question_number)
+        user_letter = prompt_user_for_answer()
+
     #If user entered Q, print quit message and break the loop
     #Otherwise, check if the user's answer is correct 
 #Define function: main()
