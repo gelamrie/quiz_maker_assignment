@@ -101,7 +101,9 @@ def start_quiz(questions):
         display_question(question_data, question_number)
         user_letter = prompt_user_for_answer()
 
-    #If user entered Q, print quit message and break the loop
+        if user_letter == "Q": #If user entered Q, print quit message and break the loop
+            console.print("[bold cyan]👋 You chose to quit the quiz early.[/bold cyan]\n")
+            break
     #Otherwise, check if the user's answer is correct 
 #Define function: main()
     #Show welcome message
