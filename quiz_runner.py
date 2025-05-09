@@ -86,7 +86,8 @@ def display_question(question_data, question_number):
 #Create a function that will ask user to input their answer to the question
 def prompt_user_for_answer():
     valid_letters = ['A', 'B', 'C', 'D', 'Q'] 
-    
+    while True:
+        user_input = Prompt.ask("[bold yellow]Your answer (A-D or Q to quit)[/bold yellow]").strip().upper()
 #Create a function that will start the quiz
     #Initialize score as zero
     #Shuffle the list of all loaded questions
