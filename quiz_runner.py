@@ -72,6 +72,10 @@ def load_questions_from_text(file_path):
 #Create a function that will display the questions, as well as the choices
 def display_question(question_data, question_number):
     console.print(f"\n[bold blue]Question {question_number + 1}:[/bold blue] {question_data['question']}")
+
+    choices_table = Table(box=box.SIMPLE)
+    choices_table.add_column("Letter", justify="center")
+    choices_table.add_column("Option", justify="left")
     
 #Create a function that will ask user to input their answer to the question
 #Create a function that will start the quiz
