@@ -80,6 +80,8 @@ def display_question(question_data, question_number):
     choice_letters = ["A", "B", "C", "D"]
     for index, choice_text in enumerate(question_data["choices"]):
         choices_table.add_row(choice_letters[index], choice_text)
+
+    console.print(choices_table)
         
 #Create a function that will ask user to input their answer to the question
 #Create a function that will start the quiz
