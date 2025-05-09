@@ -119,6 +119,9 @@ def start_quiz(questions):
             console.print(f"[bold red]❌ Wrong! Correct Answer: {correct_letter}. {correct_choice}[/bold red]\n")
 
     answered = question_number + 1 if user_letter != "Q" else question_number
+    console.rule("[bold cyan]Quiz Finished![/bold cyan]")
+    console.print(f"[bold magenta]🔥 Final Score: {score}/{answered}[/bold magenta]")
+
 #Define function: main()
     #Show welcome message
     #Call choose_file() to get file path
