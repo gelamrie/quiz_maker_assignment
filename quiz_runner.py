@@ -50,6 +50,11 @@ def load_questions_from_text(file_path):
             category = category_line.split(":", 1)[1].strip()
             question_text = question_line
             choices = [line[3:].strip() for line in choice_lines]    
+        
+            correct_letter = answer_line.split(":", 1)[1].strip().upper()
+            correct_index = ord(correct_letter) - ord('A')
+            correct_choice = choices[correct_index]
+
         #Add the question to the question list
 #Create a function that will display the questions, as well as the choices
 #Create a function that will ask user to input their answer to the question
