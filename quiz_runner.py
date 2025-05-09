@@ -108,8 +108,11 @@ def start_quiz(questions):
         user_choice_index = ord(user_letter) - ord('A')
         user_choice = question_data["choices"][user_choice_index]
         correct_choice = question_data["answer"]
-        
+
     #Otherwise, check if the user's answer is correct 
+        if user_choice == correct_choice:
+            console.print("[bold green]✅ Correct! Good job![/bold green]\n")
+            score += 1
 #Define function: main()
     #Show welcome message
     #Call choose_file() to get file path
