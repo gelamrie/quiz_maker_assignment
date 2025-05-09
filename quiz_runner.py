@@ -37,6 +37,9 @@ def load_questions_from_text(file_path):
 
     
     while line_index + 7 < len(raw_lines): #Loop thru the lines in the file
+         if raw_lines[line_index] == "":
+            line_index += 1
+            continue
         #Add the question to the question list
 #Create a function that will display the questions, as well as the choices
 #Create a function that will ask user to input their answer to the question
