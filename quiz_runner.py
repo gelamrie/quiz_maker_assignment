@@ -8,6 +8,8 @@ from rich import box
 from rich.table import Table
 import time
 
+console = Console() #Sets up the styled output system so we can print colorful, formatted messages throughout the quiz
+
 #Adding welcome message with typing effect
 #Asking the user to choose the question file
 #Load questions from the text file
