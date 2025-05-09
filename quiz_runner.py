@@ -134,6 +134,9 @@ def main(): #Define function: main()
     try:
         questions = load_questions_from_text(file_path) #Call load_questions_from_text()
         console.print(f"[bold green]📚 {len(questions)} questions loaded. Let's go![/bold green]\n")
-        start_quiz(questions)
-    #If questions loaded, call start_quiz()
+        start_quiz(questions) #If questions loaded, call start_quiz()
+    
+    except Exception as error:
+        console.print(f"[bold red]❌ Error: {error}[/bold red]")
+   
 #Call main() to begin execution
