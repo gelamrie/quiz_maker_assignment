@@ -31,7 +31,8 @@ def choose_file():
 def load_questions_from_text(file_path):
     with open(file_path, 'r', encoding='utf-8') as file: #Open the files in read mode
         raw_lines = [line.strip() for line in file.readlines()] #Read all lines from the file
-    #Initialize an empty list to store the questions
+
+    question_list = [] #Initialize an empty list to store the questions
     #Loop thru the lines in the file
         #Add the question to the question list
 #Create a function that will display the questions, as well as the choices
