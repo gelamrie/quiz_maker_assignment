@@ -125,8 +125,11 @@ def start_quiz(questions):
 def main(): #Define function: main()
     type_writer("\n🎉 Welcome to the Quiz Game! Test your knowledge and have fun!\n", delay=0.05) #Show welcome message
    
-    #Call choose_file() to get file path
-    #If no file chosen, show error and exit
+    file_path = choose_file() #Call choose_file() to get file path
+    if not file_path:
+        console.print("[bold red]❌ No file selected. Exiting.[/bold red]")    #If no file chosen, show error and exit
+        return 
+ 
     #Call load_questions_from_text()
     #If questions loaded, call start_quiz()
 #Call main() to begin execution
