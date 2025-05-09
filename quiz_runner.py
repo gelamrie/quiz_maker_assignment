@@ -34,8 +34,9 @@ def load_questions_from_text(file_path):
 
     question_list = [] #Initialize an empty list to store the questions
     line_index = 0
+
     
-    #Loop thru the lines in the file
+    while line_index + 7 < len(raw_lines): #Loop thru the lines in the file
         #Add the question to the question list
 #Create a function that will display the questions, as well as the choices
 #Create a function that will ask user to input their answer to the question
