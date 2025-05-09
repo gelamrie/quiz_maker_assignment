@@ -91,9 +91,12 @@ def prompt_user_for_answer():
         if user_input in valid_letters:
             return user_input
         console.print("[bold red]❗ Invalid input. Choose A, B, C, D, or Q to quit.[/bold red]")
+
 #Create a function that will start the quiz
-    #Initialize score as zero
-    #Shuffle the list of all loaded questions
+def start_quiz(questions):
+    score = 0  #Initialize score as zero
+    random.shuffle(questions) #Shuffle the list of all loaded questions
+
     #If user entered Q, print quit message and break the loop
     #Otherwise, check if the user's answer is correct 
 #Define function: main()
