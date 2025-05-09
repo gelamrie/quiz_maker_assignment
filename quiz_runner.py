@@ -117,6 +117,8 @@ def start_quiz(questions):
             correct_index = question_data["choices"].index(correct_choice)
             correct_letter = chr(correct_index + ord('A'))
             console.print(f"[bold red]❌ Wrong! Correct Answer: {correct_letter}. {correct_choice}[/bold red]\n")
+
+    answered = question_number + 1 if user_letter != "Q" else question_number
 #Define function: main()
     #Show welcome message
     #Call choose_file() to get file path
