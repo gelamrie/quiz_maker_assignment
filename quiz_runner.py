@@ -130,6 +130,10 @@ def main(): #Define function: main()
         console.print("[bold red]❌ No file selected. Exiting.[/bold red]")    #If no file chosen, show error and exit
         return 
     console.print(f"[bold cyan]📂 Loading file:[/bold cyan] {file_path}")
-    #Call load_questions_from_text()
+    
+    try:
+        questions = load_questions_from_text(file_path) #Call load_questions_from_text()
+        console.print(f"[bold green]📚 {len(questions)} questions loaded. Let's go![/bold green]\n")
+        start_quiz(questions)
     #If questions loaded, call start_quiz()
 #Call main() to begin execution
