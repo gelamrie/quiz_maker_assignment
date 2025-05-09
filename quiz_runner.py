@@ -1,4 +1,13 @@
 #Importing libraries
+import random
+import tkinter as tk
+from tkinter import filedialog
+from rich.console import Console
+from rich.prompt import Prompt
+from rich import box
+from rich.table import Table
+import time
+
 #Adding welcome message with typing effect
 #Asking the user to choose the question file
 #Load questions from the text file
