@@ -28,7 +28,8 @@ def choose_file():
     return file_path
 
 #Load questions from the text file
-    #Open the files in read mode
+def load_questions_from_text(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file: #Open the files in read mode
     #Read all lines from the file
     #Initialize an empty list to store the questions
     #Loop thru the lines in the file
