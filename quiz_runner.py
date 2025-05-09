@@ -65,8 +65,14 @@ def load_questions_from_text(file_path):
         except Exception as error:
             console.print(f"[bold red]⚠ Malformed block at line {line_index + 1}: {error}[/bold red]")
     
-    line_index += 8        
+        line_index += 8   
+
+    return question_list
+     
 #Create a function that will display the questions, as well as the choices
+def display_question(question_data, question_number):
+    console.print(f"\n[bold blue]Question {question_number + 1}:[/bold blue] {question_data['question']}")
+    
 #Create a function that will ask user to input their answer to the question
 #Create a function that will start the quiz
     #Initialize score as zero
