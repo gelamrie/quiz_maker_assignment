@@ -122,8 +122,9 @@ def start_quiz(questions):
     console.rule("[bold cyan]Quiz Finished![/bold cyan]")
     console.print(f"[bold magenta]🔥 Final Score: {score}/{answered}[/bold magenta]")
 
-#Define function: main()
-    #Show welcome message
+def main(): #Define function: main()
+    type_writer("\n🎉 Welcome to the Quiz Game! Test your knowledge and have fun!\n", delay=0.05) #Show welcome message
+   
     #Call choose_file() to get file path
     #If no file chosen, show error and exit
     #Call load_questions_from_text()
