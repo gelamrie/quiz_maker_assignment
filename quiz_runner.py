@@ -129,7 +129,7 @@ def main(): #Define function: main()
     if not file_path:
         console.print("[bold red]❌ No file selected. Exiting.[/bold red]")    #If no file chosen, show error and exit
         return 
- 
+    console.print(f"[bold cyan]📂 Loading file:[/bold cyan] {file_path}")
     #Call load_questions_from_text()
     #If questions loaded, call start_quiz()
 #Call main() to begin execution
