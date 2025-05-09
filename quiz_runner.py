@@ -11,6 +11,12 @@ import time
 console = Console() #Sets up the styled output system so we can print colorful, formatted messages throughout the quiz
 
 #Adding welcome message with typing effect
+def type_writer(message, delay=0.04):
+    for char in message:
+        print(char, end='', flush=True)
+        time.sleep(delay)
+    print()  # new line
+
 #Asking the user to choose the question file
 #Load questions from the text file
     #Open the files in read mode
