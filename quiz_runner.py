@@ -18,6 +18,15 @@ def type_writer(message, delay=0.04):
     print()  # new line
 
 #Asking the user to choose the question file
+def choose_file():
+    root = tk.Tk()
+    root.withdraw() # Hide the main tkinter window
+    file_path = filedialog.askopenfilename(
+        title="Select Quiz Bank File",
+        filetypes=[("Text files", "*.txt")]
+    )
+    return file_path
+
 #Load questions from the text file
     #Open the files in read mode
     #Read all lines from the file
